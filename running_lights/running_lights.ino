@@ -9,10 +9,9 @@ int Blink(int pin){
   digitalWrite(pin, HIGH);
   delay(DELAY);
   digitalWrite(pin, LOW);
-  //delay(DELAY);
 }
+
 int Blink(int pin, int pin2){
-//  delay(DELAY);/
   digitalWrite(pin, HIGH);
   delay(DELAY);
   digitalWrite(pin, LOW);
