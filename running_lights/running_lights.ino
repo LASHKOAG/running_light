@@ -1,4 +1,5 @@
-const int LED_WHITE = 5;
+const int LED_WHITE = 4;
+const int LED_RED = 5
 const int LED_BLUE = 6;
 const int LED_YELLOY = 7;
 const int DELAY = 100;
@@ -11,9 +12,14 @@ int Blink(int pin){
   delay(DELAY);
 }
 void setup() {
-  pinMode(8, OUTPUT);
+  pinMode(LED_YELLOY, OUTPUT);
+  pinMode(LED_BLUE, OUTPUT);
+  pinMode(LED_RED, OUTPUT);
+  pinMode(LED_WHITE, OUTPUT);
 }
 
 void loop() {
-  LongBlink(PIN);
+  for (int i = 4; i < 8; ++i){
+    blink
+  }
 }
