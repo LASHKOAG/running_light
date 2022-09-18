@@ -1,7 +1,7 @@
 const int LED_WHITE = 4;
 const int LED_RED = 5;
 const int LED_BLUE = 6;
-const int LED_YELLOY = 7;
+const int LED_YELLOW = 7;
 const int DELAY = 250;
 
 int Blink(int pin){
@@ -35,13 +35,17 @@ void RunningLightRightLeft(){
 }
 
 void setup() {
-  pinMode(LED_YELLOY, OUTPUT);
+  pinMode(LED_YELLOW, OUTPUT);
   pinMode(LED_BLUE, OUTPUT);
   pinMode(LED_RED, OUTPUT);
   pinMode(LED_WHITE, OUTPUT);
 }
 
 void loop() {
-  RunningLightLeftRight();
-  RunningLightRightLeft();
+//  RunningLightLeftRight();/
+//  RunningLightRightLeft();/
+
+  while(true){
+    Blink(LED_YELLOW);
+  }
 }
