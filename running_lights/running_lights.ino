@@ -19,6 +19,21 @@ int Blink(int pin, int pin2){
   digitalWrite(pin2, HIGH);
   //delay(DELAY);
 }
+
+void RunningLightLeftRight(){
+  for (int i = 4; i < 8; ++i){
+//    Blink(i);
+      Blink(i, i+1);
+  }
+}
+
+void RunningLightRightLeft(){
+  for (int i = 7; i > 4; --i){
+//    Blink(i);
+      Blink(i, i-1);
+  }
+}
+
 void setup() {
   pinMode(LED_YELLOY, OUTPUT);
   pinMode(LED_BLUE, OUTPUT);
@@ -27,8 +42,6 @@ void setup() {
 }
 
 void loop() {
-  for (int i = 4; i < 8; ++i){
-//    Blink(i);
-      Blink(i, i+1);
-  }
+  RunningLightLeftRight();
+  RunningLightRightLeft();
 }
