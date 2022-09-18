@@ -1,15 +1,15 @@
 const int LED_WHITE = 4;
-const int LED_RED = 5
+const int LED_RED = 5;
 const int LED_BLUE = 6;
 const int LED_YELLOY = 7;
-const int DELAY = 100;
+const int DELAY = 200;
 
 int Blink(int pin){
   delay(DELAY);
   digitalWrite(pin, HIGH);
   delay(DELAY);
   digitalWrite(pin, LOW);
-  delay(DELAY);
+  //delay(DELAY);
 }
 void setup() {
   pinMode(LED_YELLOY, OUTPUT);
@@ -20,6 +20,6 @@ void setup() {
 
 void loop() {
   for (int i = 4; i < 8; ++i){
-    blink
+    Blink(i);
   }
 }
